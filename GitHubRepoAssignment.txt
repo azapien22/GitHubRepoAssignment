@@ -1,0 +1,115 @@
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/dojoassignments/webfundamentals/git/gittest (master)
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/dojoassignments/webfundamentals/git/gittest (master)
+$ ls
+aboutme.txt  index.html  styles.css
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/dojoassignments/webfundamentals/git/gittest (master)
+$ cd ../..
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/dojoassignments/webfundamentals (master)
+$ ls
+about.txt  css/  git/  html/  javascript/
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/dojoassignments/webfundamentals (master)
+$ cd ..
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/dojoassignments (master)
+$ cd ..
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ ls
+ codecademy/  'coding dojo'/   desktop.ini   dojoassignments/   test/
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ mkdir Gitubrepoassignment
+H
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ ls
+ codecademy/  'coding dojo'/   desktop.ini   dojoassignments/   Gitubrepoassignment/   test/
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ rmdir  Gitubrepoassignment
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ ls
+ codecademy/  'coding dojo'/   desktop.ini   dojoassignments/   test/
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ clear
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ ls
+ codecademy/  'coding dojo'/   desktop.ini   dojoassignments/   test/
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ mkdir GitHubRepoAssignment
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ ls
+ codecademy/  'coding dojo'/   desktop.ini   dojoassignments/   GitHubRepoAssignment/   test/
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop
+$ cd  GitHubRepoAssignment
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment
+$ git init
+Initialized empty Git repository in C:/Users/azapi/Desktop/GitHubRepoAssignment/.git/
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ echo "# GitHubRepoAssignment" >> README.md
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ ls
+README.md
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ vim README.md
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ touch GitHubRepoAssignment.txt
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ ls
+GitHubRepoAssignment.txt  README.md
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ git commit -m "introduced a readme file"
+[master (root-commit) b6f334c] introduced a readme file
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ git remote add origin https://github.com/azapien22/GitHubRepoAssignment.git
+
+azapi@DESKTOP-O31MJVH MINGW64 ~/desktop/GitHubRepoAssignment (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/azapien22/GitHubRepoAssignment.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
